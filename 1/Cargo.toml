@@ -1,6 +1,6 @@
 [package]
 name = "inverse-captcha"
 version = "0.1.0"
-authors = ["Thomas van der Burgt <t.vanderburgt@student.science.ru.nl>"]
+authors = ["Thomas van der Burgt <thomas@thvdburgt.nl>"]
 
 [dependencies]
