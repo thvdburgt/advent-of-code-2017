@@ -13,10 +13,10 @@ fn main() {
     let input = input.trim();
     println!(
         "the answer for part 1 is {}",
-        advent::solve_puzzle_part1(input)
+        advent::solve_puzzle_part_1(input)
     );
     println!(
         "the answer for part 2 is {}",
-        advent::solve_puzzle_part2(input)
+        advent::solve_puzzle_part_2(input)
     );
 }

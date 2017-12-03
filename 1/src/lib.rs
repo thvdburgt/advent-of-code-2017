@@ -1,12 +1,12 @@
-pub fn solve_puzzle_part1(input: &str) -> String {
+pub fn solve_puzzle_part_1(input: &str) -> String {
     puzzle(input, 1).to_string()
 }
 
-pub fn solve_puzzle_part2(input: &str) -> String {
+pub fn solve_puzzle_part_2(input: &str) -> String {
     puzzle(input, input.len() / 2).to_string()
 }
 
-pub fn puzzle(input: &str, skip: usize) -> u32 {
+fn puzzle(input: &str, skip: usize) -> u32 {
     input
         .chars()
         .zip(input.chars().cycle().skip(skip))

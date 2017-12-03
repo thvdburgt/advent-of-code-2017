@@ -3,7 +3,7 @@ extern crate advent_of_code_2017_day2;
 use advent_of_code_2017_day2::*;
 
 #[test]
-fn part1_example() {
+fn part_1_example() {
     // 5 1 9 5
     // 7 5 3
     // 2 4 6 8
@@ -18,11 +18,11 @@ fn part1_example() {
 7 5 3
 2 4 6 8";
     println!("{}", input);
-    assert_eq!(solve_puzzle_part1(input), "18");
+    assert_eq!(solve_puzzle_part_1(input), "18");
 }
 
 #[test]
-fn part2_example() {
+fn part_2_example() {
     // 5 9 2 8
     // 9 4 7 3
     // 3 8 6 5
@@ -38,5 +38,5 @@ fn part2_example() {
 9 4 7 3
 3 8 6 5";
     println!("{}", input);
-    assert_eq!(solve_puzzle_part2(input), "9");
+    assert_eq!(solve_puzzle_part_2(input), "9");
 }

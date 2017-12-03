@@ -1,8 +1,8 @@
-pub fn solve_puzzle_part1(input: &str) -> String {
+pub fn solve_puzzle_part_1(input: &str) -> String {
     puzzle1(input).to_string()
 }
 
-pub fn solve_puzzle_part2(input: &str) -> String {
+pub fn solve_puzzle_part_2(input: &str) -> String {
     puzzle2(input).to_string()
 }
 

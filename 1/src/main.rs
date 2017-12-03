@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::prelude::*;
 
-extern crate advent_of_code_day1 as advent;
+extern crate advent_of_code_2017_day_1 as advent;
 
 fn main() {
     let mut file = File::open("input").expect("Could not open input");
@@ -13,10 +13,10 @@ fn main() {
     let input = input.trim();
     println!(
         "the answer for part 1 is {}",
-        advent::solve_puzzle_part1(input)
+        advent::solve_puzzle_part_1(input)
     );
     println!(
         "the answer for part 2 is {}",
-        advent::solve_puzzle_part2(input)
+        advent::solve_puzzle_part_2(input)
     );
 }
