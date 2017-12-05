@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "day-1-inverse-captcha", 
+    "day-2-corruption-checksum", 
+    "day-3-spiral-memory", 
+    "day-4-high-entropy-passphrases", 
+    "day-5-a-maze-of-twisty-trampolines-all-alike", 
+]
