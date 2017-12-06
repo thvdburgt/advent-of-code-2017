@@ -5,4 +5,5 @@ members = [
     "day-3-spiral-memory", 
     "day-4-high-entropy-passphrases", 
     "day-5-a-maze-of-twisty-trampolines-all-alike", 
+    "day-6-memory-reallocation",
 ]
