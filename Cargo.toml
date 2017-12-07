@@ -6,4 +6,5 @@ members = [
     "day-4-high-entropy-passphrases", 
     "day-5-a-maze-of-twisty-trampolines-all-alike", 
     "day-6-memory-reallocation",
+    "day-7-recursive-circus",
 ]
