@@ -137,7 +137,7 @@ impl Operation {
         };
 
         let val = regs.entry(reg.to_string()).or_insert(0);
-        
+
         *val += match *self {
             Inc(_, n) => n,
             Dec(_, n) => -n,

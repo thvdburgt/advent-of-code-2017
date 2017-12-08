@@ -92,23 +92,21 @@ fn puzzle2(input: u32) -> u32 {
                     f(0) + f(1) + f(prev_ring_length - 1) + prev_val
                 } else if is_corner_square(i + 1) {
                     // one square before a corner
-                    f(j - 1) + f(j) + prev_val +
-                        if i == ring_length - 2 {
-                            // this is one square before last corner
-                            ring.squares[0].content.unwrap()
-                        } else {
-                            0
-                        }
+                    f(j - 1) + f(j) + prev_val + if i == ring_length - 2 {
+                        // this is one square before last corner
+                        ring.squares[0].content.unwrap()
+                    } else {
+                        0
+                    }
                 } else if is_corner_square(i) {
                     // corner square
                     corners_passed += 1;
-                    f(j - 1) + prev_val +
-                        if i == ring_length - 1 {
-                            // this is the last square
-                            ring.squares[0].content.unwrap()
-                        } else {
-                            0
-                        }
+                    f(j - 1) + prev_val + if i == ring_length - 1 {
+                        // this is the last square
+                        ring.squares[0].content.unwrap()
+                    } else {
+                        0
+                    }
                 } else if is_corner_square(i - 1) {
                     // one square after a corner
                     f(j) + f(j + 1) + prev_val + prev_prev_val
