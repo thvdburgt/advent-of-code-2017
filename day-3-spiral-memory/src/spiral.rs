@@ -83,8 +83,8 @@ impl Iterator for SpiralRingIterator {
 
 
 pub fn location_of_square_in_ring(ring: &Ring, square_index: usize) -> Option<SquareLocation> {
-    if !(ring.squares.first().unwrap().index <= square_index
-        && square_index <= ring.squares.last().unwrap().index)
+    if !(ring.squares.first().unwrap().index <= square_index &&
+             square_index <= ring.squares.last().unwrap().index)
     {
         return None;
     }

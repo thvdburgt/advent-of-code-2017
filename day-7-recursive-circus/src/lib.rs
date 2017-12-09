@@ -58,9 +58,9 @@ fn parse_line(line: &str) -> (&str, ProgramNode) {
 
 fn root_program<'a>(programs: &HashMap<&'a str, ProgramNode>) -> &'a str {
     // look for a program that is not contained in the list of children of any other node
-    let bottom_program = programs
-        .keys()
-        .find(|name| !programs.values().any(|node| node.children.contains(name)));
+    let bottom_program = programs.keys().find(|name| {
+        !programs.values().any(|node| node.children.contains(name))
+    });
 
     bottom_program.expect("no bottom program found")
 }
@@ -136,5 +136,7 @@ fn weigh_tree(tree: &HashMap<&str, ProgramNode>, node: &str) -> WeighReturn {
         }
     }
 
-    WeighReturn::Weight(tree[node].weight + child_weight * tree[node].children.len() as u32)
+    WeighReturn::Weight(
+        tree[node].weight + child_weight * tree[node].children.len() as u32,
+    )
 }

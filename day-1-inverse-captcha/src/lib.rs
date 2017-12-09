@@ -10,12 +10,10 @@ fn puzzle(input: &str, skip: usize) -> u32 {
     input
         .chars()
         .zip(input.chars().cycle().skip(skip))
-        .filter_map(|(curr_char, next_char)| {
-            if curr_char == next_char {
-                curr_char.to_digit(10)
-            } else {
-                None
-            }
+        .filter_map(|(curr_char, next_char)| if curr_char == next_char {
+            curr_char.to_digit(10)
+        } else {
+            None
         })
         .sum()
 }
