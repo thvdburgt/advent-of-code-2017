@@ -9,4 +9,5 @@ members = [
     "day-7-recursive-circus",
     "day-8-i-heard-you-like-registers",
     "day-9-stream-processing",
+    "day-10-knot-hash",
 ]
