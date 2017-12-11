@@ -35,7 +35,6 @@ fn string_to_nums(line: &str) -> Vec<u32> {
         .collect()
 }
 
-
 fn cycle_bank(banks: &mut Vec<u32>) {
     // find the memory bank with the most blocks (use of negative index to make sure ties are won
     // by the lowest-numbered memory bank)

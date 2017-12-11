@@ -56,12 +56,12 @@ impl Condition {
         use Condition::*;
 
         let reg = match *self {
-            Lt(ref reg, _) |
-            LtEq(ref reg, _) |
-            Eq(ref reg, _) |
-            NotEq(ref reg, _) |
-            GtEq(ref reg, _) |
-            Gt(ref reg, _) => reg,
+            Lt(ref reg, _)
+            | LtEq(ref reg, _)
+            | Eq(ref reg, _)
+            | NotEq(ref reg, _)
+            | GtEq(ref reg, _)
+            | Gt(ref reg, _) => reg,
         };
 
         let val = regs.entry(reg.to_string()).or_insert(0);

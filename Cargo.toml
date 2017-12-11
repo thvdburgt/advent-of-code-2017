@@ -10,4 +10,5 @@ members = [
     "day-8-i-heard-you-like-registers",
     "day-9-stream-processing",
     "day-10-knot-hash",
+    "day-11-hex-ed",
 ]

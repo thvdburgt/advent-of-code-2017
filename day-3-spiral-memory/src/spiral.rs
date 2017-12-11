@@ -61,11 +61,9 @@ impl Iterator for SpiralRingIterator {
         let length_next = 8 * (self.curr_ring.n as usize + 1);
         let next_squares = (first_index_next..)
             .take(length_next as usize)
-            .map(|index| {
-                Square {
-                    index,
-                    content: None,
-                }
+            .map(|index| Square {
+                index,
+                content: None,
             })
             .collect();
         let next_ring = Ring {
@@ -81,10 +79,9 @@ impl Iterator for SpiralRingIterator {
     }
 }
 
-
 pub fn location_of_square_in_ring(ring: &Ring, square_index: usize) -> Option<SquareLocation> {
-    if !(ring.squares.first().unwrap().index <= square_index &&
-             square_index <= ring.squares.last().unwrap().index)
+    if !(ring.squares.first().unwrap().index <= square_index
+        && square_index <= ring.squares.last().unwrap().index)
     {
         return None;
     }

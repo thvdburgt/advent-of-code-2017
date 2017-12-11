@@ -48,7 +48,6 @@ fn round(
                 (*current_position + i) % list_len,
                 (*current_position + length - 1 - i) % list_len,
             );
-
         }
 
         // update current_position

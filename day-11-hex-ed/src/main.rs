@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::prelude::*;
 
-extern crate advent_of_code_2017_day_1 as advent;
+extern crate advent_of_code_2017_day_11 as advent;
 
 fn main() {
     let mut file = File::open("input").expect("Could not open input");
