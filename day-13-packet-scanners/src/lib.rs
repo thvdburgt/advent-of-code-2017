@@ -33,12 +33,11 @@ pub fn solve_puzzle_part_2(input: &str) -> String {
     // keep increasing the delay by a pico second until we find one where none
     // of the firewall layers will catch us
     (0..)
-        .filter(|delay| {
+        .find(|delay| {
             !layers
                 .iter()
                 .any(|layer| layer.scanner_pos(delay + layer.depth) == 0)
         })
-        .nth(0)
         .unwrap()
         .to_string()
 }
