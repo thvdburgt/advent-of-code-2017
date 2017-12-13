@@ -12,4 +12,5 @@ members = [
     "day-10-knot-hash",
     "day-11-hex-ed",
     "day-12-digital-plumber",
+    "day-13-packet-scanners",
 ]
