@@ -13,4 +13,5 @@ members = [
     "day-11-hex-ed",
     "day-12-digital-plumber",
     "day-13-packet-scanners",
+    "day-14-disk-defragmentation",
 ]
