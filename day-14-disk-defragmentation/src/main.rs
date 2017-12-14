@@ -1,16 +1,7 @@
-use std::fs::File;
-use std::io::prelude::*;
-
 extern crate advent_of_code_2017_day_14 as advent;
 
 fn main() {
-    let mut file = File::open("input").expect("Could not open input");
-    let mut input = String::new();
-    file.read_to_string(&mut input).expect(
-        "Could not read input",
-    );
-
-    let input = input.trim();
+    let input = "amgozmfv";
     println!(
         "the answer for part 1 is {}",
         advent::solve_puzzle_part_1(input)
