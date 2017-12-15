@@ -14,4 +14,5 @@ members = [
     "day-12-digital-plumber",
     "day-13-packet-scanners",
     "day-14-disk-defragmentation",
+    "day-15-dueling-generators",
 ]
