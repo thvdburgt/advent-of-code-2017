@@ -1,22 +1,14 @@
-use std::fs::File;
-use std::io::prelude::*;
-
 extern crate advent_of_code_2017_day_15 as advent;
 
 fn main() {
-    let mut file = File::open("input").expect("Could not open input");
-    let mut input = String::new();
-    file.read_to_string(&mut input).expect(
-        "Could not read input",
-    );
-
-    let input = input.trim();
+    let gen_a_start = 516;
+    let gen_b_start = 190;
     println!(
         "the answer for part 1 is {}",
-        advent::solve_puzzle_part_1(input)
+        advent::solve_puzzle_part_1(gen_a_start, gen_b_start)
     );
     println!(
         "the answer for part 2 is {}",
-        advent::solve_puzzle_part_2(input)
+        advent::solve_puzzle_part_2(gen_a_start, gen_b_start)
     );
 }
