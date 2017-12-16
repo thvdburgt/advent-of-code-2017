@@ -40,7 +40,8 @@ impl Iterator for Generator {
     type Item = u32;
 
     fn next(&mut self) -> Option<Self::Item> {
-        self.previous = ((u64::from(self.previous) * u64::from(self.factor)) % 2_147_483_647) as u32;
+        self.previous =
+            ((u64::from(self.previous) * u64::from(self.factor)) % 2_147_483_647) as u32;
         Some(self.previous)
     }
 }
