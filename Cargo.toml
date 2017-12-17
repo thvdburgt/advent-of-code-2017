@@ -16,4 +16,5 @@ members = [
     "day-14-disk-defragmentation",
     "day-15-dueling-generators",
     "day-16-permutation-promenade",
+    "day-17-spinlock",
 ]
