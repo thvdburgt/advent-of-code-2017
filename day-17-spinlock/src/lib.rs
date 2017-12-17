@@ -12,8 +12,8 @@ pub fn solve_puzzle_part_1(steps: usize) -> u32 {
 
 pub fn solve_puzzle_part_2(steps: usize) -> u32 {
     let mut position = 0;
-
     let mut val_after_zero = 0;
+
     for i in 0..50_000_000 {
         position = 1 + (position + steps) % (i as usize + 1);
         if position == 1 {
