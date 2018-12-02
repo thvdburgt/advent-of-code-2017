@@ -51,7 +51,7 @@ fn cycle_bank(banks: &mut Vec<u32>) {
     for x in banks.iter_mut() {
         *x += quotient;
     }
-    // add 1 to ecah bank for 'remainder' banks from max bank
+    // add 1 to each bank for 'remainder' banks from max bank
     let remainder = max_val % banks_len as u32;
     for i in (max_i + 1)..(max_i + 1 + remainder as usize) {
         banks[i % banks_len] += 1;
